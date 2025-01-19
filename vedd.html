@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ff7e5f, #feb47b); /* Two-color gradient */
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .form-container {
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      background: #ffffff; /* White background for the form */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    input, button {
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #218838;
+    }
+    label a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    label a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Sign Up</h2>
+    <form action="login.html" method="post">
+      <input type="text" placeholder="Username" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <label>
+        <input type="checkbox" required> I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>
+      </label>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</body>
+</html>
