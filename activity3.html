@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        .shade {
+            background-color:lightgreen; 
+        }
+        .shade1{
+            background-color:lightblue;
+        }
+        .shade2{
+            background-color:lightyellow;
+        }
+        .shade3{
+            background-color:lightpink;
+        }
+        .affirmation {
+            font-family: Arial, sans-serif;
+            color: peru;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td rowspan="2"><img src="https://images.shiksha.com/mediadata/images/articles/1584528545phpdljDz1.jpeg" alt="Image" width="100"></td>
+            <td colspan="2" class="shade">r1c3</td>
+            <td class="affirmation">r1c4<br>Stay Positive!</td>
+            <td>r1c5</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2" >r2c3<br><a href="mailto:example@example.com">Send Email</a></td>
+            <td colspan="2" rowspan="2">r3c4<br><a href="#"><img src="https://images.shiksha.com/mediadata/images/articles/1584528545phpdljDz1.jpeg" alt="Hyperlinked Image" width="100"></a></td>
+            <td>r3c6</td>
+        </tr>
+        
+        <tr>
+            <td rowspan="2"><a href="home.html">r3c1<br>Home</a></td>
+        </tr>
+        
+        <tr>
+            <td class="shade2">r4c1</td>
+            <td class="shade3">r4c2</td>
+            <td class="affirmation">r4c4<br>Keep Learning!</td>
+            <td>r4c5</td>
+        </tr>
+
+        <tr>
+            <td class="shade1">r5c1</td>
+            <td colspan="2" class="affirmation">r5c3<br>You Are Amazing!</td>
+            <td></td>
+            <td class="affirmation">r5c5<br>Dream Big!</td>
+        </tr>
+        
+        <tr>
+            <td colspan="3"></td>
+            <td class="affirmation">r6c4<br>Success Awaits!</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
